@@ -20,17 +20,55 @@
     background: hsl(0, 0%, 100%);
     border-radius: 1em;
     box-shadow: 3px 5px 4px 3px rgba(0,0,0,1);
--webkit-box-shadow: 3px 5px 4px 3px rgba(0,0,0,1);
--moz-box-shadow: 3px 5px 4px 3px rgba(0,0,0,1);
-
-}
-
-.card {
+    -webkit-box-shadow: 3px 5px 4px 3px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 5px 4px 3px rgba(0,0,0,1);;
+    padding: 1.1em 1em 0 1em;
     
 }
 
 .img--principal {
-    border-radius: .7em;
-   
+    border-radius: .7em;   
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.content .title:active {
+    color: hsl(47, 88%, 63%);
+}
+
+.content .learning {
+    background: hsl(47, 88%, 63%);
+    width: fit-content;
+    font-weight: 900;
+    font-size: .8em;
+    padding: .1em .8em .1em .8em;
+    margin-top: 1em ;
+}
+
+.content .fecha {
+    font-size: .9em;
+}
+
+.content .card--description {
+    font-size: .9em;
+    color: hsl(0, 0%, 42%);
+}
+
+ .user .content--user {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.user .content--user label {
+    font-weight: 900;
+    font-size: .7em;
+}
+.user .content--user img {
+    height: 2em;
+}
